@@ -62,3 +62,14 @@ void setup() {
 
   Serial.begin(9600);
 }
+/**
+ * @brief Main control loop.
+ *
+ * @details
+ * - Sends trigger pulse to ultrasonic sensor.
+ * - Measures echo duration.
+ * - Calculates distance in centimeters.
+ * - Rotates servo to 180° if object ≤ 15 cm.
+ * - Otherwise sets servo to 0°.
+ * - Prints distance on Serial Monitor.
+ */
