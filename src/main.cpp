@@ -54,3 +54,11 @@ int ech_pin = 10;
  * - Servo motor attachment
  * - Serial communication (9600 baud)
  */
+void setup() {
+  pinMode(trg_pin, OUTPUT);
+  pinMode(ech_pin, INPUT);
+
+  myservo.attach(5);   ///< Attach servo to digital pin 5
+
+  Serial.begin(9600);
+}
