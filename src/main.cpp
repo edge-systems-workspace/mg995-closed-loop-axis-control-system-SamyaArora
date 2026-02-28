@@ -35,3 +35,4 @@
  * 3. Calculate distance using speed of sound.
  * 4. Rotate servo based on threshold distance (15 cm).
  */
+#include <Servo.h>
